@@ -28,10 +28,10 @@
 
 <body>
 
-  <header class="header header-fixed">
+  <header class="header header-fixed header-active">
 
     <div class="header-head">
-      <a href="javascript:;">
+      <a href="#">
         <img
           class="header-img header-img-logo"
           src="./images/header-logo.png"
@@ -80,14 +80,22 @@
       <p class="banner-description">學會，百萬年薪不是夢</p>
     </div>
     <div class="banner-body">
-      <picture>
-        <source media="(max-width: 768px)" src="./images/banner/banner-1-mobile.jpg">
-        <img class="banner-img ani-fade ani-delay-5" src="./images/banner/banner-1-desktop.jpg" width="750" height="422" alt="">
+      <picture class="ani-fade">
+        <source media="(max-width: 768px)" srcset="./images/banner/banner-1-mobile.jpg">
+        <img class="banner-img" src="./images/banner/banner-1-desktop.jpg" width="750" height="422" alt="">
       </picture>
-      <img class="banner-img ani-fade" src="./images/banner/banner-1-desktop.jpg" width="750" height="422" alt="">
-      <img class="banner-img ani-fade ani-delay-5" src="./images/banner/banner-2-desktop.jpg" width="1024" height="565" alt="">
-      <img class="banner-img ani-fade ani-delay-10" src="./images/banner/banner-3-desktop.jpg" width="1500" height="855" alt="">
-      <img class="banner-img ani-fade ani-delay-15" src="./images/banner/banner-4-desktop.jpg" width="1800" height="1200" alt="">
+      <picture class="ani-fade ani-delay-5">
+        <source media="(max-width: 768px)" srcset="./images/banner/banner-2-mobile.jpg">
+        <img class="banner-img " src="./images/banner/banner-2-desktop.jpg" width="1024" height="565" alt="">
+      </picture>
+      <picture class="ani-fade ani-delay-10">
+        <source media="(max-width: 768px)" srcset="./images/banner/banner-3-mobile.jpg">
+        <img class="banner-img" src="./images/banner/banner-3-desktop.jpg" width="1500" height="855" alt="">
+      </picture>
+      <picture class="ani-fade ani-delay-15">
+        <source media="(max-width: 768px)" srcset="./images/banner/banner-4-mobile.jpg">
+        <img class="banner-img" src="./images/banner/banner-4-desktop.jpg" width="1800" height="1200" alt="">
+      </picture>
     </div>
   </section>
 
@@ -362,7 +370,7 @@
         </div>
 
         <div class="section-item">
-          <div class="tableWrap ">
+          <div class="tableWrap">
             <table class="table table-border table-stripe table-hover table-nowrap table-size-m">
               <thead>
                 <tr>
@@ -376,37 +384,43 @@
                 <tr>
                   <th>第一屆</th>
                   <td class="h-text-center">21 人</td>
-                  <td class="h-text-center" >17 人</td>
+                  <td class="h-text-center">17 人</td>
                   <td class="h-text-center">前端工程師 16 人</td>
                 </tr>
                 <tr>
-                  <th>第二屆</th>
-                  <td class="h-text-center">20 人</td>
+                  <th>第一屆</th>
+                  <td class="h-text-center">21 人</td>
                   <td class="h-text-center">17 人</td>
-                  <td class="h-text-center">前端工程師 13 人</td>
+                  <td class="h-text-center">前端工程師 16 人</td>
                 </tr>
                 <tr>
-                  <th>第三屆</th>
-                  <td class="h-text-center">41 人</td>
-                  <td class="h-text-center">38 人</td>
-                  <td class="h-text-center">前端工程師 26 人</td>
+                  <th>第一屆</th>
+                  <td class="h-text-center">21 人</td>
+                  <td class="h-text-center">17 人</td>
+                  <td class="h-text-center">前端工程師 16 人</td>
                 </tr>
                 <tr>
-                  <th>第四屆</th>
-                  <td class="h-text-center">33 人</td>
-                  <td class="h-text-center">27 人</td>
-                  <td class="h-text-center">前端工程師 21 人</td>
+                  <th>第一屆</th>
+                  <td class="h-text-center">21 人</td>
+                  <td class="h-text-center">17 人</td>
+                  <td class="h-text-center">前端工程師 16 人</td>
                 </tr>
                 <tr>
-                  <th>第五屆</th>
-                  <td class="h-text-center">28 人</td>
-                  <td class="h-text-center">22 人</td>
-                  <td class="h-text-center">前端工程師 17 人</td>
+                  <th>第一屆</th>
+                  <td class="h-text-center">21 人</td>
+                  <td class="h-text-center">17 人</td>
+                  <td class="h-text-center">前端工程師 16 人</td>
                 </tr>
                 <tr>
-                  <th>第六屆</th>
-                  <td class="h-text-center">29 人</td>
-                  <td class="h-text-center">20 人</td>
+                  <th>第一屆</th>
+                  <td class="h-text-center">21 人</td>
+                  <td class="h-text-center">17 人</td>
+                  <td class="h-text-center">前端工程師 16 人</td>
+                </tr>
+                <tr>
+                  <th>第一屆</th>
+                  <td class="h-text-center">21 人</td>
+                  <td class="h-text-center">17 人</td>
                   <td class="h-text-center">前端工程師 16 人</td>
                 </tr>
               </tbody>
@@ -426,29 +440,28 @@
   </section>
 
   <footer class="footer">
-    <div class="footer-contaner h-container-m h-mx-auto h-row">
+    <div class="footer-container h-container-m h-mx-auto h-row">
       <div class="footer-head">
         <h4 class="footer-title">F2E 前端開發</h4>
         <p class="footer-description">本網頁純屬練習與測試，文案與影像都為網路上取得而來，請勿營利使用!!</p>
-        <p class="footer-description">Design by IRIS</p>
-        <p class="footer-description">copyright &copy; 2025-Present</p>
+        <p class="footer-description">Design by Away</p>
+        <p class="footer-description">Copyright &copy; 2025-Present</p>
       </div>
       <aside class="aside">
         <div class="aside-head">
-          <a class="social social-ig" href="javascript">
+          <a class="social social-ig" href="javascript:;">
             <i class="fa-brands fa-3x fa-fw fa-instagram"></i>
           </a>
-          <a class="social social-fb" href="javascript">
+          <a class="social social-fb" href="javascript:;">
             <i class="fa-brands fa-3x fa-fw fa-facebook-f"></i>
           </a>
-          <a class="social social-x" href="javascript">
+          <a class="social social-x" href="javascript:;">
             <i class="fa-brands fa-3x fa-fw fa-x-twitter"></i>
           </a>
-
         </div>
         <div class="aside-body">
           <a class="social social-up" href="#">
-            <i class="fa-solid fa-3x fa-circle-chevron-up"></i>
+            <i class="fa-solid fa-3x fa-fw fa-circle-chevron-up"></i>
           </a>
         </div>
       </aside>
